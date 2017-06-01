@@ -6,6 +6,6 @@ load online_data.mat;
 
 rss = rss(1:1000, :);
 trace = trace(1:1000, :);
-predictions = online_loc( offline_rss, offline_location, rss, 'knn_reg');
+predictions = online_loc( offline_rss, offline_location, rss, 'knn_cls');
 acc = accuracy(predictions, trace);
 fprintf('accuracy£º%fm\n', acc / 100);

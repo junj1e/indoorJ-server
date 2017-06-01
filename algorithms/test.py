@@ -1,5 +1,5 @@
 import numpy as np
-import c.pyplot as plt
+import matplotlib.pyplot as plt
 
 xData = np.arange(0, 10, 1)
 yData1 = xData.__pow__(2.0)
